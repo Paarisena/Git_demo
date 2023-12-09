@@ -1,0 +1,68 @@
+Difference between HTTP/2 and HTTP/1.1
+
+HTTP/1.1: For better understanding, let’s assume the situation when you make a request to the server for the geeksforgeeks.html page & server responds to you as a resource geeksforgeeks.html page. before sending the request and the response there is a TCP connection established between client & server. again you make a request to the server for image img.jpg & the server gives a response as an image img.jpg. the connection was not lost here after the first request because we add a keep-alive header which is the part of the request so there is an open connection between the server & client. there is a persistent connection which means several requests & responses are merged in a single connection. These are the drawbacks that lead to the creation of HTTP/2: The first problem is HTTP/1.1 transfer all the requests & responses in the plain text message form. The second one is head of line blocking in which TCP connection is blocked all other requests until the response does not receive. all the information related to the header file is repeated in every request.
+
+HTTP/2: HTTP/2 was developed over the SPDY protocol. HTTP/2 works on the binary framing layer instead of textual that converts all the messages in binary format. it works on fully multiplexed that is one TCP connection is used for multiple requests. HTTP/2 uses HPACK which is used to split data from header. it compresses the header. The server sends all the other files like CSS & JS without the request of the client using the PUSH frame.
+
+Objects And Its Internal Representation In JavaScript
+
+
+Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript. These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol) in the sense that while these primitive data-types all store a single value each (depending on their types).
+
+Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value. That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+
+Loosely speaking, objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+For Eg. If your object is a student, it will have properties like name, age, address, id, etc and methods like updateAddress, updateNam, etc.
+
+Codekata Practice
+
+How do you get to be a great musician? 
+
+It helps to know the theory, and to understand the mechanics of your instrument. It helps to have talent. But ultimately, greatness comes from practicing; applying the theory over and over again, using feedback to get better every time.
+
+How do you get to be an All-Star sports person? 
+
+Obviously fitness and talent help. But the great athletes spend hours and hours every day, practicing.
+
+But in the software industry we take developers trained in the theory and throw them straight in to the deep-end, working on a project. It’s like taking a group of fit kids and telling them that they have four quarters to beat the Redskins (hey, we manage by objectives, right?). In software we do our practicing on the job, and that’s why we make mistakes on the job. We need to find ways of splitting the practice from the profession. We need practice sessions.
+
+What makes a good practice session? You need time without interruptions, and a simple thing you want to try. You need to try it as many times as it takes, and be comfortable making mistakes. You need to look for feedback each time so you can work to improve. There needs to be no pressure: this is why it is hard to practice in a project environment. it helps to keep it fun: make small steps forward when you can. Finally, you’ll recognize a good practice session because you’ll came out of it knowing more than when you went in.
+
+Code Kata is an attempt to bring this element of practice to software development. A kata is an exercise in karate where you repeat a form many, many times, making little improvements in each. The intent behind code kata is similar. Each is a short exercise (perhaps 30 minutes to an hour long). Some involve programming, and can be coded in many different ways. Some are open ended, and involve thinking about the issues behind programming. These are unlikely to have a single correct answer. I add a new kata every week or so. Invest some time in your craft and try them.
+
+Remember that the point of the kata is not arriving at a correct answer. The point is the stuff you learn along the way. The goal is the practice, not the solution.
+
+
+1. IP address : 
+An Internet Protocol address (IP address) is the logical address of our network hardware by which other devices identify it in a network. IP address stands for Internet Protocol address which is an unique number or a numerical representation that uniquely identifies a specific interface on the network. Each device that is connected to internet an IP address is assigned to it for its unique identification. 
+
+Addresses in IPv4 are 32-bits long example, 
+12.244.233.165 
+
+And Addresses in IPv6 are 128-bits example, 
+2001:0db8:0000:0000:0000:ff00:0042:7879 
+
+Port Number : 
+Port number is the part of the addressing information used to identify the senders and receivers of messages in computer networking. Different port numbers are used to determine what protocol incoming traffic should be directed to. Port number identifies a specific process to which an Internet or other network message is to be forwarded when it arrives at a server. Ports are identified for each protocol and It is considered as a communication endpoint. 
+
+Ports are represented by 16-bit numbers. There are 2^16 port numbers i.e 65536.
+
+They are divided into three categories
+
+1. Well-Known Port Numbers
+
+0 to 1023 are well-known port numbers are as they are used by well-known protocol services.
+
+These are allocated to server services by the Internet Assigned Numbers Authority (IANA).
+
+2. Registered Port Numbers
+
+1024 to 49151 are registered port numbers i.e it can be registered to specific protocols by software corporations
+
+3. Dynamic Port Numbers
+
+49152 to 65535 are dynamic port numbers and they can be used by anyone
+
+
