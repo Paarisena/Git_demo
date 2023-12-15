@@ -1,0 +1,98 @@
+Document Object
+
+DOM, or Document Object Model, is a programming interface for web documents, primarily HTML and XML. It represents web pages as a hierarchy of nodes and objects, allowing dynamic access and manipulation of the document’s content, structure, and style. As a W3C standard, DOM provides a platform and language-neutral way for scripts to interact with web documents
+
+Every website has pages that are called HTML documents. These documents are represented on the webpage as nodes and objects. When parsed into a web browser such as Chrome, Firefox, Safari, and Opera-Mini, to mention a few helps display information. All information on the web page or document is contents or text, like placeholders on the node in the Document Object Model tree. This Document Object Model tree refers to the structure of the document.
+
+Ever since the invention of the Internet and its widespread adoption, there has been the need to have a virtual representation of physical things on the web.
+
+The Physical documents used today in various offices, organizations, and every other corporate environment have been a big part of this. That is the need for a document that properly displays information on the web. However, for this to be possible, the document has to be a model of a physical document and, at the same time, render properly on the web (Web Browsers).
+
+This document is a text file written in HTML (HyperText Markup Language). It contains Hyperlinks that point to other web pages and also within the same documents. Multimedia files such as Video, Audio, and other Graphic Content can also be embedded within the document. Understanding How the Document Object Model works is a very crucial part of web development.
+
+What is DOM (Document Object Model)?
+
+The Document Object Model is a programming interface that comprises web pages (nodes) that is HTML tags such as < html >, < meta >, < title >, < body >, < footer > , < dv >, semantic and non-semantic tags and other nodes objects. The Document Object Model, which is a W3 standard, represents web pages as a tree-like structure of nodes, known as documents.
+
+The Document Object Model allows web developers to manipulate, style, and structure node objects (HTML documents). For example, web elements are manipulated dynamically with JavaScript to add dynamic content and interactivity to the web page, while CSS is used to add aesthetics. This is referred to as styling to the web page.
+
+Furthermore, the Document Object Model can also be used with other programming languages such as C#, Ruby, Python, Java, and PHP. However, on the front end, JavaScript and CSS are mostly used as these are the languages of the browser.
+
+The DOM provides an API (Application Program Interface) called the DOM API which is used by programs and scripts like javascript to dynamically access and manipulate the document.
+
+Manipulations include
+
+adding elements to HTML elements in a page.
+remove elements from a page
+modify elements in a page
+change attribues
+change style of elements
+
+How to Access the DOM
+Different browsers have different implementations of the DOM but are somewhat similar. When javascript is used in a page, it is automatically granted access to the DOM API. It also granted access to the window object which is not entirely related to the document
+
+
+Window Object
+The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+
+Properties of the window:
+
+Closed: It holds a Boolean value that represents whether the window is closed or not.
+console: It returns a reference to the console object which provides access to the browser’s debugging console.
+defaultStatus: It is used to define the default message that will be displayed in the status bar when no activity is carried on by the browser.
+controllers: It returns the XUL controller objects for the current Chrome window.
+customElements: It returns a reference to the CustomElementRegistry object, which can be used to register new custom elements and also get information about already registered custom elements.
+crypto: It returns the browser crypto object.
+devicePixelRatio: It returns the ratio between physical pixels and device-independent pixels in the current display.
+Document: It returns a reference to the document object of that window.
+DOMMatrix: It returns a reference to a DOMMatrix object, which represents 4×4 matrices, suitable for 2D and 3D operations.
+frames[]: It represents an array that contains all the frames of a given window.
+DOMPoint: It returns a reference to a DOMPoint object, which represents a 2D or 3D point in a coordinate system.
+History: It provides information on the URLs visited in the current window.
+Length: It represents the number of frames in the current window.
+DOMRect: It returns a reference to a DOMRect object, which represents a rectangle.
+fullScreen: This property indicates whether the window is displayed on full screen or not.
+Location: It contains the URL of the current window.
+innerHeight: It is used to get the height of the content area of the browser window.
+innerWidth: It is used to get the width of the content area of the browser window.
+Name: It contains the name of the referenced window.
+Window: It returns the current window or frame.
+Navigator: It returns a reference to the navigator object.
+outerHeight: It will get the height of the outside of the browser window.
+outerWidth: It will get the width of the outside of the browser window.
+Status: It overrides the default status and places a message in the status bar.
+Top: It returns a reference to the topmost window containing a frame if many windows are opened.
+Toolbar: It will result in the toolbar object, whose visibility can be toggled in the window.
+Opener: It contains a reference to the window that opened the current window.
+Parent: It refers to the frameset in which the current frame is contained.
+Screen: It refers to the screen object
+Self: It provides another way to refer to the current window.
+
+The methods of Window objects that are commonly used are listed in the below table:
+
+alert(): It is used to display an alert box. It displays a specified message along with an OK button and is generally used to make sure that the information comes through the user.
+atob(): It is used for decoding a base-64 encoded string. It is used to decode a string of data that has been encoded using the btoa() method.
+blur(): It is used to remove focus from the current window.
+btoa(): It is used for encoding a string in base-64 format.
+clearInterval(): It clears the interval which has been set by the setInterval() function before that.
+clearTimeout(): It clears the timeout which has been set by the setTimeout()function before that.
+close(): It is used for closing a certain window or tab of the browser which was previously opened.
+confirm(): It is used to display a modal dialog with an optional message and two buttons i.e. OK and Cancel. It returns true if the user clicks “OK”, and false otherwise.
+focus(): It is used to give focus to an element in the current window.
+getComputedStyle(): It is used to get all the computed CSS properties and values of the specified element.
+getSelection(): It returns a Selection object representing the range of text selected by the user
+matchMedia(): It is used to return a MediaQueryList object which represents the result of the specified CSS media query string.
+open(): It is used to open a new tab or window with the specified URL and name.
+moveBy(): It is used for moving a window with a specified number of pixels relative to its current coordinates.
+moveTo(): It is used in the window to move the window from the left and top coordinates.
+prompt(): It is used to display a dialog with an optional message prompting the user to input some text
+resizeBy(): It is used to resize a window by the specified amount.
+resizeTo(): It is used to resize a window to the specified width and height.
+scrollBy(): It is used to scroll the document by the given number of pixels.
+scrollTo(): It is used to scroll to a particular set of coordinates in the document.
+setInterval(): It repeats a given function at every given time interval.
+setTimeout(): It executes a function, after waiting a specified number of milliseconds.
+stop(): It is used to stop the window from loading resources in the current browsing context.
+
+
+
